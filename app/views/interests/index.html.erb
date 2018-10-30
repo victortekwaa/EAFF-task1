@@ -1,0 +1,21 @@
+<h1>Customer Interest</h1>
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+#<%= form_with scope: :Interest,local: true do |form| %>
+    <p>
+      <%= form.label :customerName %><br>
+      <%= form.text_field :title %>
+    </p>
+    <p>
+      <%= form.label :MobileNumber %><br>
+      <%= form.text_field :title %>
+    </p>
+   
+    <p>
+      <%= form.label :Interest %><br>
+      <%= form.text_area :text %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
